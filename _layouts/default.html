@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+    {% seo %}
+  </head>
+
+  <body>
+    {{ content }}
+
+    <script>
+      // 简单的点击追踪（可替换为Google Analytics等）
+      document.querySelectorAll('a[href*="ref="]').forEach(link => {
+        link.addEventListener('click', () => {
+          console.log('Affiliate click tracked:', link.href);
+          // 可在此添加统计代码
+        });
+      });
+    </script>
+  </body>
+</html>

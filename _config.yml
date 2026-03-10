@@ -1,0 +1,19 @@
+title: AI工具评测联盟站
+description: 精选AI生产力工具深度评测，帮助你选择最佳方案
+author: 自主评测团队
+email: admin@example.com
+baseurl: /affiliate-site
+url: https://yansu7.github.io/affiliate-site
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# 联盟配置（请替换为真实affiliate IDs）
+affiliate_amazon_tag: YOUR_AMAZON_TAG
+affiliate_taobao_id: YOUR_TAOBAO_ID
+affiliate_jd_id: YOUR_JD_ID
+
+# 生成设置
+future: true
